@@ -1,7 +1,7 @@
 # Scoring_api
 Декларативный язык описания и система валидации запросов к HTTP API сервиса скоринга
 
-Структура запроса:
+# Структура запроса:
 ```
 curl -X POST -H "Content-Type: application/json" -d '{"account": "horns&hoofs", "login": "h&f", "method":
 "online_score", "token":
@@ -19,6 +19,6 @@ http://127.0.0.1:8080/method/
 - аргументы валидны, если валидны все поля по отдельности и если присутсвует хоть одна пара 
 phone-email, first name-last name, gender-birthday с непустыми значениями
 
-Методы:
+# Методы:
   - online_score (в ответ выдается число, полученное вызовом функции get_score)
   - clients_interests (в ответ выдается словарь <id клиента>:<список интересов>)
