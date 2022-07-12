@@ -4,7 +4,7 @@ import getpass
 class ConnectToRedis():
 
 	def __init__(self, 
-				host='redis-17580.c62.us-east-1-4.ec2.cloud.redislabs.com',  
+			host='redis-17580.c62.us-east-1-4.ec2.cloud.redislabs.com',  
 		    	port='17580',  
 		    	password=os.getenv('REDIS_PASSWORD'),
 		    	charset="utf-8",
